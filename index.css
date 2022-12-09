@@ -45,6 +45,7 @@ button {
     margin-top: 20px;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .principal {
@@ -70,6 +71,26 @@ button {
 
 .negativo {
     color: rgb(155, 50, 50);
+}
+
+.tabla {
+    width: 100%;
+}
+
+.tabla tr {
+    border: 1px solid rgb(216, 207, 207);
+    box-shadow: 1px 2px rgb(216, 207, 207);
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.tabla td {
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.tabla td:first-child {
+    border-left: 5px solid #ccc;
 }
 
 @media (max-width: 675px) {

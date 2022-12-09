@@ -9,39 +9,39 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body onload="getLocalStorage()">
     <div class="principal">
         <!-- titulo -->
         <h1>Control de Gastos</h1>
         <!-- ahorro -->
-        <h2 class="ahorro">TU AHORRO <br> <span>0.00$</span></h2>
+        <h2 class="ahorro">TU AHORRO <br> <span id="savings"></span></h2>
         <!-- tabela com valores ingresso e gasto -->
         <div class="totais">
             <div>
                 <span>INGRESO</span>
-                <span class="positivo">0.00$</span>
+                <span class="positivo" id="totalInput"></span>
 
             </div>
             <div>
                 <span>GASTO</span>
-                <span class="negativo">0.00$</span>
+                <span class="negativo" id="totalExpense"></span>
             </div>
         </div>
         <!-- Historial -->
         <div class="historial">
             <h2>Historial</h2>
             <hr>
+            <table id="history" class="tabla">
+            </table>
         </div>
         <!-- entrada dos conceptos e ingressos e botao -->
         <h2>Añadir nueva transacción</h2>
         <hr>
-        <form class="formulario" action="javascript:addTransaction()"> 
-            <label for="concepto">Concepto</label>
-            <input type="text" id="concepto" placeholder="Añade concepto...">
-
-            <label for="cantidad">Cantidad (negativo - gasto, positivo - ingreso)</label>
-            <input type="number" id="cantidad" placeholder="Introduce cantidad...">
-
+        <form class="formulario" action="javascript:addTransaction()">
+            <label for="name">Concepto</label>
+            <input type="text" id="name" placeholder="Añade concepto...">
+            <label for="total">Cantidad (negativo - gasto, positivo - ingreso)</label>
+            <input type="number" id="total" placeholder="Introduce cantidad...">
             <button type="submit" id="button">Añadir transacción</button>
         </form>
     </div>
