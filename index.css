@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.totais {
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid rgb(216, 207, 207);
+    box-shadow: 1px 2px rgb(216, 207, 207);
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.totais div {
+    padding: 20px 10px;
+}
+
+.totais span {
+    width: 100%;
+    display: block;
+    padding-top: 5px;
+}
+
+label {
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(184, 131, 233);
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.principal {
+    width: 50%;
+    border: 1px solid rgb(216, 207, 207);
+    background-color: rgb(245, 239, 239);
+    margin: 20px auto;
+    padding: 10px 60px;
+}
+
+.ahorro {
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.formulario {
+    text-align: left;
+}
+
+.positivo {
+    color: rgb(62, 172, 117);
+}
+
+.negativo {
+    color: rgb(155, 50, 50);
+}
+
+@media (max-width: 675px) {
+
+    .totais {
+        grid-template-columns: 100%;
+        text-align: left;
+    }
+}
