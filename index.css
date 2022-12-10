@@ -75,22 +75,39 @@ button {
 
 .tabla {
     width: 100%;
+    border-spacing: 0 10px;
 }
 
 .tabla tr {
     border: 1px solid rgb(216, 207, 207);
     box-shadow: 1px 2px rgb(216, 207, 207);
     background-color: white;
-    margin-bottom: 10px;
 }
 
 .tabla td {
     text-align: left;
     padding: 10px 5px;
+    border: none;
 }
 
 .tabla td:first-child {
     border-left: 5px solid #ccc;
+}
+
+.tabla td:last-child {
+    width: 40px;
+}
+
+.tabla button {
+    background-color: rgb(204, 30, 30);
+    border: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    width: 30px;
+    margin: 0;
 }
 
 @media (max-width: 675px) {

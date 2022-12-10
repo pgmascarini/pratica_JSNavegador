@@ -37,11 +37,11 @@
         <!-- entrada dos conceptos e ingressos e botao -->
         <h2>Añadir nueva transacción</h2>
         <hr>
-        <form class="formulario" action="javascript:addTransaction()">
+        <form class="formulario" id="form" action="javascript:addTransaction()">
             <label for="name">Concepto</label>
-            <input type="text" id="name" placeholder="Añade concepto...">
+            <input type="text" id="name" placeholder="Añade concepto..." required>
             <label for="total">Cantidad (negativo - gasto, positivo - ingreso)</label>
-            <input type="number" id="total" placeholder="Introduce cantidad...">
+            <input type="number" id="total" placeholder="Introduce cantidad..." required>
             <button type="submit" id="button">Añadir transacción</button>
         </form>
     </div>
