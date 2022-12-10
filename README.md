@@ -9,3 +9,6 @@ Necesitamos desarrollar una web que nos ayude a gestionar nuestros ingresos y ga
 
 ## Requisitos opcionales
 1. Si cerramos la web y volvemos a entrar, tenemos que recuperar todos los gastos e ingresos que habíamos introducido, así como el ahorro total.
+
+## Publicación
+1. Para probar, basta acceder al link https://github.com/pgmascarini/pratica_JSNavegador.
